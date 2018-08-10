@@ -1,8 +1,8 @@
-package A_BinaryGap;
+package A_Iterations;
 
 
 public class BinaryGap {
-    public static int solution(int N) {
+    public int solution(int N) {
         // write your code in Java SE 8
         String binary = "";
         while (N>0) {
@@ -28,11 +28,6 @@ public class BinaryGap {
             }
         }
         return max;
-    }
-
-    public static void main (String[]args) {
-        int answer = solution(51712);
-        System.out.println(answer);
     }
 
 }

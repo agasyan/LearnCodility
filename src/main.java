@@ -1,5 +1,6 @@
 import A_Iterations.BinaryGap;
 import B_Arrays.CyclicRotation;
+import B_Arrays.OddOccurrencesInArray;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -19,17 +20,23 @@ public class main {
                 int answer = binaryGap.solution(inInt);
                 System.out.println("Longest binary gap in " + inInt + " is " + answer + "\n");
             } else if (input.equals("list")) {
-                String list = "1. 'binaryGap' \n" +
-                        "2. 'cyclicRotation' \n" +
-                        "3. 'end' \n";
-                System.out.println(list);
+                String[] list = new String[]{"binaryGap","list","cyclicRotation"
+                    ,"oddOccurencesInArray","end"};
+                for (int i = 0; i<list.length; i++) {
+                    System.out.println(i+1 + ". '" + list[i] + "'");
+                }
             } else if (input.equals("cyclicRotation")) {
                 CyclicRotation cyclicRotation = new CyclicRotation();
                 int[] A = new int[] {5, -1000};
                 int[] arrSol = cyclicRotation.solution(A,1);
                 String out = Arrays.toString(arrSol);
                 System.out.println(out);
-            } else if (input.equals("end")){
+            } else if (input.equals("oddOccurencesInArray")) {
+                OddOccurrencesInArray oddOccurrencesInArray = new OddOccurrencesInArray();
+                int[] A = new int[]{3,3,2,2,9};
+                int sol = oddOccurrencesInArray.solution(A);
+                System.out.println(sol);
+            }else if (input.equals("end")){
                 check = false;
             } else {
                 System.out.println("Not Listed");

@@ -8,4 +8,9 @@ Just A solution to codility project
 
 ##### Lesson 2 (Array)
 - CyclicRotation (100%)
-- OddOccurencesInArray (-)
+- OddOccurrencesInArray (100%)
+
+##### Lesson 3 (Time Complexity)
+- FrogJmp(-)
+- PermMissingElem (-)
+- TapeEquilibrium (-)

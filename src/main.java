@@ -25,7 +25,7 @@ public class main {
                 System.out.println(list);
             } else if (input.equals("cyclicRotation")) {
                 CyclicRotation cyclicRotation = new CyclicRotation();
-                int[] A = new int[] {3, 8, 9, 7, 6};
+                int[] A = new int[] {5, -1000};
                 int[] arrSol = cyclicRotation.solution(A,1);
                 String out = Arrays.toString(arrSol);
                 System.out.println(out);

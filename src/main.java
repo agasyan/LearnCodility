@@ -1,6 +1,7 @@
 import A_Iterations.BinaryGap;
 import B_Arrays.CyclicRotation;
 import B_Arrays.OddOccurrencesInArray;
+import C_TimeComplexity.FrogJmp;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -21,7 +22,7 @@ public class main {
                 System.out.println("Longest binary gap in " + inInt + " is " + answer + "\n");
             } else if (input.equals("list")) {
                 String[] list = new String[]{"binaryGap","list","cyclicRotation"
-                    ,"oddOccurencesInArray","end"};
+                    ,"oddOccurencesInArray", "frogJmp","end"};
                 for (int i = 0; i<list.length; i++) {
                     System.out.println(i+1 + ". '" + list[i] + "'");
                 }
@@ -36,7 +37,11 @@ public class main {
                 int[] A = new int[]{3,3,2,2,9};
                 int sol = oddOccurrencesInArray.solution(A);
                 System.out.println(sol);
-            }else if (input.equals("end")){
+            } else if (input.equals("frogJmp")) {
+                FrogJmp frogJmp = new FrogJmp();
+                int sol = frogJmp.solution(10,85, 30);
+                System.out.println(sol);
+            } else if (input.equals("end")){
                 check = false;
             } else {
                 System.out.println("Not Listed");

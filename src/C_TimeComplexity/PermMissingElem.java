@@ -11,6 +11,6 @@ public class PermMissingElem {
                 return i+1;
             }
         }
-        return 0;
+        return A.length+1;
     }
 }

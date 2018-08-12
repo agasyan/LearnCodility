@@ -3,6 +3,7 @@ import B_Arrays.CyclicRotation;
 import B_Arrays.OddOccurrencesInArray;
 import C_TimeComplexity.FrogJmp;
 import C_TimeComplexity.PermMissingElem;
+import C_TimeComplexity.TapeEquilibrium;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -10,8 +11,14 @@ import java.util.Scanner;
 public class main {
     public static void main (String[]args) {
         boolean check = true;
+        Scanner scanner = new Scanner(System.in);
+        String[] list = new String[]{"binaryGap","list","cyclicRotation"
+                ,"oddOccurencesInArray", "frogJmp", "permMissingElem"
+                , "tapeEquilibrium","end"};
+        for (int i = 0; i<list.length; i++) {
+            System.out.println(i+1 + ". '" + list[i] + "'");
+        }
         while (check) {
-            Scanner scanner = new Scanner(System.in);
             System.out.println("=======================================================");
             System.out.println("Enter a command :");
             String input = scanner.nextLine();
@@ -22,9 +29,6 @@ public class main {
                 int answer = binaryGap.solution(inInt);
                 System.out.println("Longest binary gap in " + inInt + " is " + answer + "\n");
             } else if (input.equals("list")) {
-                String[] list = new String[]{"binaryGap","list","cyclicRotation"
-                        ,"oddOccurencesInArray", "frogJmp", "permMissingElem"
-                        ,"end"};
                 for (int i = 0; i<list.length; i++) {
                     System.out.println(i+1 + ". '" + list[i] + "'");
                 }
@@ -39,7 +43,12 @@ public class main {
                 int[] A = new int[]{3,3,2,2,9};
                 int sol = oddOccurrencesInArray.solution(A);
                 System.out.println(sol);
-            }  else if (input.equals("frogJmp")) {
+            } else if (input.equals("tapeEquilibrium")) {
+                TapeEquilibrium tapeEquilibrium = new TapeEquilibrium();
+                int[] A = new int[]{3,1,2,4,3};
+                int sol = tapeEquilibrium.solution(A);
+                System.out.println(sol);
+            } else if (input.equals("frogJmp")) {
                 FrogJmp frogJmp = new FrogJmp();
                 int sol = frogJmp.solution(10,100, 30);
                 System.out.println(sol);

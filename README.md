@@ -13,4 +13,4 @@ Just A solution to codility project
 ##### Lesson 3 (Time Complexity)
 - FrogJmp(100%)
 - PermMissingElem (100%)
-- TapeEquilibrium (-)
+- TapeEquilibrium (66%)

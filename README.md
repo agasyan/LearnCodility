@@ -11,6 +11,6 @@ Just A solution to codility project
 - OddOccurrencesInArray (100%)
 
 ##### Lesson 3 (Time Complexity)
-- FrogJmp(-)
+- FrogJmp(100%)
 - PermMissingElem (-)
 - TapeEquilibrium (-)

@@ -39,7 +39,7 @@ public class main {
                 System.out.println(sol);
             } else if (input.equals("frogJmp")) {
                 FrogJmp frogJmp = new FrogJmp();
-                int sol = frogJmp.solution(10,85, 30);
+                int sol = frogJmp.solution(10,100, 30);
                 System.out.println(sol);
             } else if (input.equals("end")){
                 check = false;

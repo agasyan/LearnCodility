@@ -45,7 +45,7 @@ public class main {
                 System.out.println(sol);
             } else if (input.equals("tapeEquilibrium")) {
                 TapeEquilibrium tapeEquilibrium = new TapeEquilibrium();
-                int[] A = new int[]{3,1,2,4,3};
+                int[] A = new int[]{-3,-1,-2,-4,-3};
                 int sol = tapeEquilibrium.solution(A);
                 System.out.println(sol);
             } else if (input.equals("frogJmp")) {

@@ -5,6 +5,7 @@ import C_TimeComplexity.FrogJmp;
 import C_TimeComplexity.PermMissingElem;
 import C_TimeComplexity.TapeEquilibrium;
 import D_CountingElements.FrogRiverOne;
+import D_CountingElements.PermCheck;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class main {
         Scanner scanner = new Scanner(System.in);
         String[] list = new String[]{"binaryGap","list","cyclicRotation"
                 ,"oddOccurencesInArray", "frogJmp", "permMissingElem"
-                , "tapeEquilibrium","frogRiverOne","end"};
+                , "tapeEquilibrium","frogRiverOne","permCheck","end"};
         for (int i = 0; i<list.length; i++) {
             System.out.println(i+1 + ". '" + list[i] + "'");
         }
@@ -52,6 +53,11 @@ public class main {
             } else if (input.equals("frogJmp")) {
                 FrogJmp frogJmp = new FrogJmp();
                 int sol = frogJmp.solution(10,100, 30);
+                System.out.println(sol);
+            } else if (input.equals("permCheck")) {
+                PermCheck permCheck = new PermCheck();
+                int[] A = new int[]{4, 1, 3, 2};
+                int sol = permCheck.solution(A);
                 System.out.println(sol);
             } else if (input.equals("frogRiverOne")) {
                 FrogRiverOne frogRiverOne = new FrogRiverOne();

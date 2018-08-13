@@ -16,7 +16,7 @@ Just A solution to codility project
 - TapeEquilibrium (100%)
 
 ##### Lesson 4 (Counting Elements)
-- PermCheck (-)
+- PermCheck (100%)
 - FrogRiverOne (18%)
 - MaxCounters (-)
 - MissingInteger (-)

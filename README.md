@@ -19,4 +19,4 @@ Just A solution to codility project
 - PermCheck (100%)
 - FrogRiverOne (18%)
 - MaxCounters (-)
-- MissingInteger (-)
+- MissingInteger (100%)

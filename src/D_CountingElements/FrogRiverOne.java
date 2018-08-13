@@ -1,17 +1,15 @@
 package D_CountingElements;
 
+import java.util.HashSet;
+
 public class FrogRiverOne {
     public int solution(int X, int[] A) {
         // write your code in Java SE 8
-        int sol = 0;
+        HashSet<Integer> hashSet = new HashSet<>();
         for (int i = 0; i<A.length;i++) {
-            if (A[i] == X) {
-                sol = i;
-                return sol;
-            }
-            //System.out.println(A[i] +" = " + sol);
+            if (A[i]<=X) hashSet.add(A[i]);
+            if (hashSet.size()== X) return i;
         }
-        sol = -1;
-        return sol;
+        return -1;
     }
 }

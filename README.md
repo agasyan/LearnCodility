@@ -17,6 +17,6 @@ Just A solution to codility project
 
 ##### Lesson 4 (Counting Elements)
 - PermCheck (-)
-- FrogRiverOne (-)
+- FrogRiverOne (18%)
 - MaxCounters (-)
 - MissingInteger (-)

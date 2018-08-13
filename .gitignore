@@ -28,3 +28,4 @@ modules.xml
 vcs.xml
 workspace.xml
 LearnCodility.iml
+checkstyle-idea.xml
